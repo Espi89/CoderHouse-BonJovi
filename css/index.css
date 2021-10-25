@@ -154,16 +154,18 @@ footer {
       font-size: .8rem;
       margin: 0; }
 
+@media (max-width: 430px) {
+  footer .top {
+    gap: 1em; } }
+
 /*button*/
 /*====================*/
 /*-------Views--------*/
 /*====================*/
 /*Inicio*/
 .inicio__header {
-  background: url(../public/img/bg/bon-jovi-bg.jpg) no-repeat center;
-  /*background: url(../public/img/bg/bon-jovi-bg.jpg) no-repeat center; FUNCIONA CON VSCODE Y PAGINA COMUN*/
+  background: url(../public/img/bg/bon-jovi-bg.jpg) no-repeat;
   background-size: cover;
-  /*background-color: yellow;*/
   min-height: 100vh; }
   .inicio__header #app {
     color: #a1660d;
@@ -271,12 +273,86 @@ main {
   grid-row-start: span 2;
   grid-column-start: span 2; }
 
+@media (max-width: 430px) {
+  header.inicio__header {
+    min-height: 40vh;
+    background-position: center; }
+    header.inicio__header #app {
+      display: none; }
+  .wave {
+    display: none; }
+  .contenedor {
+    width: 100% !important; }
+  .gallery-container {
+    width: 100% !important; }
+    .gallery-container .gallery__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .gallery-container .gallery__item:nth-child(1) {
+      grid-column-start: span 3; }
+    .gallery-container .gallery__item:nth-child(2) {
+      display: none; }
+    .gallery-container .gallery__item:nth-child(4) {
+      display: none; }
+    .gallery-container .gallery__item:nth-child(6) {
+      /*Rihana*/
+      display: none; }
+    .gallery-container .gallery__item:nth-child(7) {
+      grid-column-start: span 2; }
+    .gallery-container .gallery__item:nth-child(8) {
+      /*cara jon*/
+      display: none; }
+    .gallery-container .gallery__item:nth-child(9) {
+      grid-column-start: span 2; }
+    .gallery-container .gallery__item:nth-child(10) {
+      grid-column-start: span 2; } }
+
+@media (min-width: 768px) {
+  header.inicio__header {
+    min-height: 40vh;
+    background-position: center; }
+    header.inicio__header #app {
+      display: none; }
+  .wave {
+    display: none; }
+  .contenedor {
+    width: 80% !important; }
+  .img-contenido {
+    justify-content: center !important; }
+  .gallery-container {
+    width: 90% !important; }
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .gallery__item:nth-child(1) {
+    display: none; }
+  .gallery__item:nth-child(2) {
+    grid-column-start: span 2; }
+  .gallery__item:nth-child(3) {
+    display: none; }
+  .gallery__item:nth-child(4) {
+    grid-column-start: span 2; }
+  .gallery__item:nth-child(5) {
+    display: none; }
+  .gallery__item:nth-child(6) {
+    grid-column-start: span 2; }
+  .gallery__item:nth-child(7) {
+    grid-column-start: span 2; }
+  .gallery__item:nth-child(8) {
+    display: none; }
+  .gallery__item:nth-child(9) {
+    grid-column-start: span 2; }
+  .gallery__item:nth-child(10) {
+    grid-column-start: span 2; } }
+
 /*Miembros*/
 .miembros__header .navbar {
   background: #1b1b1b !important; }
 
 .miembros__main .miembros__section .container-primera {
-  margin: 2em 1em 5em 1em;
+  margin: 2em 1em 5em;
   padding: 15px 0;
   background-image: radial-gradient(circle, #232121, #302f2f, #3e3d3d, #4c4c4c, #5b5b5b);
   border-radius: 10px;
@@ -299,7 +375,7 @@ main {
   from {
     transform: scale(1); }
   to {
-    transform: scale(1.1); } }
+    transform: scale(2); } }
 
 .miembros__main .container-card {
   margin: 2em 1em 4em 1em;
@@ -314,6 +390,42 @@ main {
     filter: grayscale(100%); }
     .miembros__main .miembros__antiguos__grid .miembros-antiguos-contenedor img:hover {
       filter: grayscale(0%); }
+
+@media (max-width: 430px) {
+  .container-primera {
+    width: 100% !important; }
+  .card {
+    margin-bottom: 1em; }
+  .card {
+    margin-bottom: 1em; }
+  .container-img {
+    overflow: hidden; }
+    .container-img img {
+      animation-duration: 2s;
+      animation-name: rockstar;
+      animation-iteration-count: infinite;
+      animation-direction: alternate; }
+  @keyframes rockstar {
+    from {
+      transform: translateX(-10%); }
+    to {
+      transform: translateX(10%); } } }
+
+@media (min-width: 768px) {
+  .grid-miembros-actuales {
+    gap: 1em; }
+  .container-img {
+    overflow: hidden; }
+    .container-img img {
+      animation-duration: 2s;
+      animation-name: rockstar;
+      animation-iteration-count: infinite;
+      animation-direction: alternate; }
+  @keyframes rockstar {
+    from {
+      transform: translateX(-10%); }
+    to {
+      transform: translateX(10%); } } }
 
 /*Discografia*/
 .discografia__header .navbar {
@@ -357,6 +469,22 @@ main {
   background-color: #7eac7c;
   border-radius: .5em; }
 
+@media (max-width: 430px) {
+  .discografia .discografia__section .discografia__texto p {
+    width: 95% !important; }
+  .albumes .container-fluid {
+    font-size: .9rem; }
+  .spotify iframe {
+    width: 100%; } }
+
+@media (min-width: 768px) {
+  .discografia .discografia__section .discografia__texto p {
+    width: 95% !important; }
+  .albumes .container-fluid .table {
+    width: 95% !important; }
+  .spotify iframe {
+    width: 100%; } }
+
 /*Conciertos*/
 .conciertos__header .navbar {
   background: #1b1b1b !important; }
@@ -368,8 +496,7 @@ main {
   .conciertos__grid .container-videos .primero {
     background-image: url(../public/img/concert/concert1.jpg); }
   .conciertos__grid .container-videos .segundo {
-    background-image: url(../public/img/concert/concert2.jpg);
-    /*si se ve*/ }
+    background-image: url(../public/img/concert/concert2.jpg); }
   .conciertos__grid .container-videos .tercero {
     background-image: url(../public/img/concert/concert3.jpg); }
   .conciertos__grid .container-videos .cuarto {
@@ -385,6 +512,16 @@ main {
   .conciertos__grid .container-videos .noveno {
     background-image: url(../public/img/concert/concert9.jpg); }
 
+@media (max-width: 430px) {
+  .container-img {
+    width: 250px !important;
+    background-position: center; } }
+
+@media (min-width: 768px) {
+  .container-img {
+    width: 200px !important;
+    background-position: center; } }
+
 /*Contactanos*/
 .contactanos__header .navbar {
   background: #1b1b1b !important; }
@@ -398,3 +535,11 @@ main {
     text-align: center; }
   .container-formulario .form-check-label {
     font-size: .9rem; }
+
+@media (max-width: 430px) {
+  .container-formulario {
+    width: 100% !important; } }
+
+@media (min-width: 768px) {
+  .container-formulario {
+    width: 75% !important; } }
