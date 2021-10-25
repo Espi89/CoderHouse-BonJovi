@@ -160,7 +160,8 @@ footer {
 /*====================*/
 /*Inicio*/
 .inicio__header {
-  background-image: url(../public/img/bg/bon-jovi-bg.jpg) no-repeat cover;
+  background: url(../public/img/bg/bon-jovi-bg.jpg) no-repeat center;
+  /*background: url(../public/img/bg/bon-jovi-bg.jpg) no-repeat center; FUNCIONA CON VSCODE Y PAGINA COMUN*/
   background-size: cover;
   /*background-color: yellow;*/
   min-height: 100vh; }
@@ -365,23 +366,24 @@ main {
   color: #fff;
   padding: 1em; }
   .conciertos__grid .container-videos .primero {
-    background-image: url(./public/img/concert/concert1.jpg); }
+    background-image: url(../public/img/concert/concert1.jpg); }
   .conciertos__grid .container-videos .segundo {
-    background-image: url(../public/img/concert/concert2.jpg); }
+    background-image: url(../public/img/concert/concert2.jpg);
+    /*si se ve*/ }
   .conciertos__grid .container-videos .tercero {
-    background-image: url(../../public/img/concert/concert3.jpg); }
+    background-image: url(../public/img/concert/concert3.jpg); }
   .conciertos__grid .container-videos .cuarto {
-    background-image: url(public/img/concert/concert4.jpg); }
+    background-image: url(../public/img/concert/concert4.jpg); }
   .conciertos__grid .container-videos .quinto {
-    background-image: url(../../public/img/concert/concert5.jpg); }
+    background-image: url(../public/img/concert/concert5.jpg); }
   .conciertos__grid .container-videos .sexto {
-    background-image: url(../../public/img/concert/concert6.jpg); }
+    background-image: url(../public/img/concert/concert6.jpg); }
   .conciertos__grid .container-videos .septimo {
-    background-image: url(../../public/img/concert/concert7.jpg); }
+    background-image: url(../public/img/concert/concert7.jpg); }
   .conciertos__grid .container-videos .octavo {
-    background-image: url(../../public/img/concert/concert8.jpg); }
+    background-image: url(../public/img/concert/concert8.jpg); }
   .conciertos__grid .container-videos .noveno {
-    background-image: url(../../public/img/concert/concert9.jpg); }
+    background-image: url(../public/img/concert/concert9.jpg); }
 
 /*Contactanos*/
 .contactanos__header .navbar {
