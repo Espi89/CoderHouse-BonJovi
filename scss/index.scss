@@ -1,0 +1,38 @@
+/*====================*/
+/*-----Utils----------*/
+/*====================*/
+
+/*Variables*/
+@import "./utils/variables";
+/*Animaciones*/
+@import "./utils/animation";
+/*Normalizador*/
+@import "./utils/normalize";
+/*Globales*/
+@import "./utils/globals";
+
+/*====================*/
+/*-----Partials-------*/
+/*====================*/
+
+/*header*/
+@import "./partials/header";
+/*footer*/
+@import "./partials/footer";
+/*button*/
+@import "./partials/button";
+
+/*====================*/
+/*-------Views--------*/
+/*====================*/
+/*Inicio*/
+@import "./views/inicio.scss";
+/*Miembros*/
+@import "./views/miembros.scss";
+/*Discografia*/
+@import "./views/discografia.scss";
+/*Conciertos*/
+@import "./views/conciertos.scss";
+/*Contactanos*/
+@import "./views/contactanos.scss";
+

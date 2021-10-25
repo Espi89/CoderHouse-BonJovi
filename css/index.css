@@ -1,0 +1,398 @@
+/*====================*/
+/*-----Utils----------*/
+/*====================*/
+/*Variables*/
+/* VARIABLES COLOR */
+/* SUBTITULOS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+.subtitulos h2 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f4f1de; }
+
+/*ELEMENTO MODAL*/
+.modal-body {
+  font-size: .9rem; }
+
+.btn-warning {
+  color: #fff;
+  font-weight: 500;
+  background-color: #0d81ec;
+  border: #0D81EC; }
+
+.card {
+  border: 2px solid #0D81EC; }
+
+.container-videos {
+  padding: 1em 3em; }
+  .container-videos .container-img {
+    width: 300px;
+    height: 200px;
+    border: 5px solid #212529;
+    margin-bottom: .4em;
+    border-radius: .3em; }
+
+.nombreVideo {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: .1rem; }
+  .nombreVideo a {
+    text-decoration: none; }
+
+.descriptionVideo {
+  font-size: .9rem;
+  margin-bottom: .1rem; }
+
+.bi-film {
+  font-size: 1.1rem;
+  margin-left: .7rem;
+  color: #fff; }
+
+/*Animaciones*/
+/*Normalizador*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; }
+
+/*Globales*/
+/* GOOGLE FONTS */
+* {
+  font-family: 'Montserrat', sans-serif; }
+
+/*====================*/
+/*-----Partials-------*/
+/*====================*/
+/*header*/
+.inicio__header .navbar, .miembros__header .navbar, .discografia__header .navbar, .conciertos__header .navbar, .contactanos__header .navbar {
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.6)) !important; }
+  .inicio__header .navbar .navbar-brand .nav-logo img, .miembros__header .navbar .navbar-brand .nav-logo img, .discografia__header .navbar .navbar-brand .nav-logo img, .conciertos__header .navbar .navbar-brand .nav-logo img, .contactanos__header .navbar .navbar-brand .nav-logo img {
+    width: 45px; }
+  .inicio__header .navbar .navbar-brand .nav-text-logo, .miembros__header .navbar .navbar-brand .nav-text-logo, .discografia__header .navbar .navbar-brand .nav-text-logo, .conciertos__header .navbar .navbar-brand .nav-text-logo, .contactanos__header .navbar .navbar-brand .nav-text-logo {
+    font-size: 1.5rem;
+    font-weight: 600; }
+  .inicio__header .navbar .collapse .navbar-nav li a, .miembros__header .navbar .collapse .navbar-nav li a, .discografia__header .navbar .collapse .navbar-nav li a, .conciertos__header .navbar .collapse .navbar-nav li a, .contactanos__header .navbar .collapse .navbar-nav li a {
+    color: rgba(255, 228, 196, 0.688); }
+    .inicio__header .navbar .collapse .navbar-nav li a:hover, .miembros__header .navbar .collapse .navbar-nav li a:hover, .discografia__header .navbar .collapse .navbar-nav li a:hover, .conciertos__header .navbar .collapse .navbar-nav li a:hover, .contactanos__header .navbar .collapse .navbar-nav li a:hover {
+      transition: all .3s ease-in-out;
+      font-weight: 400;
+      color: white; }
+  .inicio__header .navbar .collapse .social-media .social-media-menu li, .miembros__header .navbar .collapse .social-media .social-media-menu li, .discografia__header .navbar .collapse .social-media .social-media-menu li, .conciertos__header .navbar .collapse .social-media .social-media-menu li, .contactanos__header .navbar .collapse .social-media .social-media-menu li {
+    padding-right: 15px; }
+    .inicio__header .navbar .collapse .social-media .social-media-menu li a, .miembros__header .navbar .collapse .social-media .social-media-menu li a, .discografia__header .navbar .collapse .social-media .social-media-menu li a, .conciertos__header .navbar .collapse .social-media .social-media-menu li a, .contactanos__header .navbar .collapse .social-media .social-media-menu li a {
+      color: rgba(255, 228, 196, 0.688);
+      font-size: 1.5em; }
+      .inicio__header .navbar .collapse .social-media .social-media-menu li a:hover, .miembros__header .navbar .collapse .social-media .social-media-menu li a:hover, .discografia__header .navbar .collapse .social-media .social-media-menu li a:hover, .conciertos__header .navbar .collapse .social-media .social-media-menu li a:hover, .contactanos__header .navbar .collapse .social-media .social-media-menu li a:hover {
+        color: #fff; }
+
+/*footer*/
+footer {
+  color: #9b9b9b; }
+  footer .top {
+    gap: 7em;
+    background: #171616;
+    padding-top: 20px; }
+    footer .top .column1 {
+      display: flex;
+      justify-content: center; }
+      footer .top .column1 ul {
+        padding-left: 0; }
+        footer .top .column1 ul li {
+          margin-bottom: 5px; }
+          footer .top .column1 ul li .footer__menu__titulo__columna1 {
+            text-transform: uppercase;
+            font-weight: 700; }
+          footer .top .column1 ul li a {
+            color: #9b9b9b;
+            text-decoration: none; }
+            footer .top .column1 ul li a:hover {
+              color: #fff; }
+    footer .top .column2 {
+      display: flex;
+      justify-content: center; }
+      footer .top .column2 .icon-media ul {
+        padding-left: 0; }
+        footer .top .column2 .icon-media ul li .footer__menu__titulo__columna2 {
+          text-transform: uppercase;
+          font-weight: 700; }
+        footer .top .column2 .icon-media ul li img {
+          width: 80px;
+          padding-top: 10px;
+          padding-bottom: 15px; }
+          footer .top .column2 .icon-media ul li img:hover {
+            filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(33deg) brightness(139%) contrast(101%); }
+    footer .top .column3 {
+      display: flex;
+      justify-content: center; }
+      footer .top .column3 ul {
+        padding-left: 0; }
+        footer .top .column3 ul li {
+          margin-bottom: 5px; }
+          footer .top .column3 ul li .footer__menu__titulo__column3 {
+            text-transform: uppercase;
+            font-weight: 700; }
+          footer .top .column3 ul li a {
+            color: #9b9b9b;
+            text-decoration: none; }
+            footer .top .column3 ul li a:hover {
+              color: #fff; }
+          footer .top .column3 ul li i {
+            padding-right: 5px; }
+  footer .bottom {
+    border-top: 1px solid #fff;
+    background-color: #171616;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer .bottom p {
+      font-size: .8rem;
+      margin: 0; }
+
+/*button*/
+/*====================*/
+/*-------Views--------*/
+/*====================*/
+/*Inicio*/
+.inicio__header {
+  background-image: url(../public/img/bg/bon-jovi-bg.jpg) no-repeat cover;
+  background-size: cover;
+  /*background-color: yellow;*/
+  min-height: 100vh; }
+  .inicio__header #app {
+    color: #a1660d;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 65vh;
+    margin-left: 4vw; }
+
+main {
+  padding-top: 2em;
+  background: #7a7272; }
+  main .main-color-bg {
+    background: #7a7272; }
+    main .main-color-bg .container-fluid {
+      margin: 1em 0; }
+      main .main-color-bg .container-fluid .contenedor {
+        margin: 2em;
+        padding: 15px 0;
+        background-image: radial-gradient(circle, #232121, #302f2f, #3e3d3d, #4c4c4c, #5b5b5b);
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px 0px #363636; }
+        main .main-color-bg .container-fluid .contenedor .texto-contenidos {
+          color: #f4f1de;
+          text-align: center; }
+          main .main-color-bg .container-fluid .contenedor .texto-contenidos .subtitulos {
+            text-align: center; }
+            main .main-color-bg .container-fluid .contenedor .texto-contenidos .subtitulos h2 {
+              font-size: 1.7rem;
+              font-weight: 800;
+              color: #f4f1de;
+              text-align: start;
+              text-transform: uppercase;
+              text-align: center; }
+        main .main-color-bg .container-fluid .contenedor p {
+          font-size: .9rem; }
+        main .main-color-bg .container-fluid .contenedor .img-contenido .img-borde {
+          text-align: center;
+          border-radius: 7px;
+          border: 2px solid #0D81EC; }
+
+.grid-img-banda {
+  margin-top: 1em; }
+  .grid-img-banda h3.subtitulo-grid {
+    margin: 2em auto;
+    padding: 0 100px;
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #f4f1de;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative; }
+    .grid-img-banda h3.subtitulo-grid::after, .grid-img-banda h3.subtitulo-grid::before {
+      content: '';
+      position: absolute;
+      width: 120px;
+      height: 2px;
+      background-color: #fff;
+      top: 0.6em; }
+    .grid-img-banda h3.subtitulo-grid::before {
+      left: -30px; }
+    .grid-img-banda h3.subtitulo-grid::after {
+      right: -30px; }
+
+.contenedor-flex {
+  background-color: #7a7272;
+  margin: 0; }
+  .contenedor-flex .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 150px;
+    padding: 10px;
+    grid-gap: 10px;
+    background: #212529;
+    border-radius: 20px;
+    margin-bottom: 4rem; }
+    .contenedor-flex .gallery-container .gallery__item {
+      border-radius: 10px;
+      border: 1px solid #000; }
+
+.gallery-container .gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.gallery-container .gallery__item:nth-child(1) {
+  grid-row-start: span 2; }
+
+.gallery-container .gallery__item:nth-child(2) {
+  grid-column-start: span 2;
+  grid-row-start: span 2; }
+
+.gallery-container .gallery__item:nth-child(4) {
+  grid-row-start: span 2; }
+
+.gallery-container .gallery__item:nth-child(6) {
+  grid-row-start: span 2; }
+
+.gallery-container .gallery__item:nth-child(8) {
+  grid-row-start: span 2; }
+
+.gallery-container .gallery__item:nth-child(9) {
+  grid-row-start: span 2;
+  grid-column-start: span 2; }
+
+/*Miembros*/
+.miembros__header .navbar {
+  background: #1b1b1b !important; }
+
+.miembros__main .miembros__section .container-primera {
+  margin: 2em 1em 5em 1em;
+  padding: 15px 0;
+  background-image: radial-gradient(circle, #232121, #302f2f, #3e3d3d, #4c4c4c, #5b5b5b);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px 0px #363636; }
+  .miembros__main .miembros__section .container-primera .container-texto {
+    padding: 1rem 1rem; }
+    .miembros__main .miembros__section .container-primera .container-texto p {
+      font-size: .9rem;
+      color: #fff;
+      text-align: center; }
+  .miembros__main .miembros__section .container-primera .container-img {
+    overflow: hidden; }
+    .miembros__main .miembros__section .container-primera .container-img img {
+      animation-duration: 2s;
+      animation-name: rockstar;
+      animation-iteration-count: infinite;
+      animation-direction: alternate; }
+
+@keyframes rockstar {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(1.1); } }
+
+.miembros__main .container-card {
+  margin: 2em 1em 4em 1em;
+  text-align: center; }
+  .miembros__main .container-card .grid-miembros-actuales {
+    margin-bottom: 1em; }
+
+.miembros__main .miembros__antiguos__grid {
+  text-align: center;
+  margin: 2em 1em 4em 1em; }
+  .miembros__main .miembros__antiguos__grid .miembros-antiguos-contenedor img {
+    filter: grayscale(100%); }
+    .miembros__main .miembros__antiguos__grid .miembros-antiguos-contenedor img:hover {
+      filter: grayscale(0%); }
+
+/*Discografia*/
+.discografia__header .navbar {
+  background: #1b1b1b !important; }
+
+.discografia .discografia__section .discografia__texto p {
+  font-size: 1rem;
+  color: #bebebe;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  margin-top: .5rem;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: .5rem;
+  padding: .8rem;
+  background-color: #536371; }
+
+.discografia .albumes .container-fluid {
+  margin-top: 1rem;
+  margin-bottom: 4rem; }
+
+.discografia .subtitulos h2 {
+  margin-bottom: 3rem; }
+
+.discografia .container-top-ten .texto-musica h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 1em; }
+
+.discografia .container-top-ten .texto-musica p {
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 1rem;
+  color: #9ec99d; }
+
+.discografia .container-top-ten .spotify {
+  padding-top: 1em;
+  margin-bottom: .5em;
+  padding-bottom: 1em;
+  background-color: #7eac7c;
+  border-radius: .5em; }
+
+/*Conciertos*/
+.conciertos__header .navbar {
+  background: #1b1b1b !important; }
+
+.conciertos__grid {
+  background-color: #3b3b3b !important;
+  color: #fff;
+  padding: 1em; }
+  .conciertos__grid .container-videos .primero {
+    background-image: url(../../public/img/concert/concert1.jpg); }
+  .conciertos__grid .container-videos .segundo {
+    background-image: url(../../public/img/concert/concert2.jpg); }
+  .conciertos__grid .container-videos .tercero {
+    background-image: url(../../public/img/concert/concert3.jpg); }
+  .conciertos__grid .container-videos .cuarto {
+    background-image: url(../../public/img/concert/concert4.jpg); }
+  .conciertos__grid .container-videos .quinto {
+    background-image: url(../../public/img/concert/concert5.jpg); }
+  .conciertos__grid .container-videos .sexto {
+    background-image: url(../../public/img/concert/concert6.jpg); }
+  .conciertos__grid .container-videos .septimo {
+    background-image: url(../../public/img/concert/concert7.jpg); }
+  .conciertos__grid .container-videos .octavo {
+    background-image: url(../../public/img/concert/concert8.jpg); }
+  .conciertos__grid .container-videos .noveno {
+    background-image: url(../../public/img/concert/concert9.jpg); }
+
+/*Contactanos*/
+.contactanos__header .navbar {
+  background: #1b1b1b !important; }
+
+.container-formulario {
+  border: 1px solid silver !important;
+  margin: 1em auto;
+  border-radius: .5em;
+  font-size: 1rem; }
+  .container-formulario legend {
+    text-align: center; }
+  .container-formulario .form-check-label {
+    font-size: .9rem; }
