@@ -365,13 +365,13 @@ main {
   color: #fff;
   padding: 1em; }
   .conciertos__grid .container-videos .primero {
-    background-image: url(../../public/img/concert/concert1.jpg); }
+    background-image: url(./public/img/concert/concert1.jpg); }
   .conciertos__grid .container-videos .segundo {
-    background-image: url(../../public/img/concert/concert2.jpg); }
+    background-image: url(../public/img/concert/concert2.jpg); }
   .conciertos__grid .container-videos .tercero {
     background-image: url(../../public/img/concert/concert3.jpg); }
   .conciertos__grid .container-videos .cuarto {
-    background-image: url(../../public/img/concert/concert4.jpg); }
+    background-image: url(public/img/concert/concert4.jpg); }
   .conciertos__grid .container-videos .quinto {
     background-image: url(../../public/img/concert/concert5.jpg); }
   .conciertos__grid .container-videos .sexto {
