@@ -225,7 +225,8 @@ main {
 
 @media (max-width: 430px) {
   .inicio__header {
-    min-height: 60vh !important; }
+    min-height: 40vh !important;
+    background-position: center; }
   .container-carousel {
     width: 90% !important; }
   .contenedor {
@@ -441,8 +442,14 @@ main {
 
 @media (max-width: 430px) {
   .container-formulario {
-    width: 100% !important; } }
+    width: 100% !important; }
+  .container-button {
+    display: flex;
+    gap: 1em; } }
 
 @media (min-width: 768px) {
   .container-formulario {
-    width: 75% !important; } }
+    width: 75% !important; }
+  .container-button {
+    display: flex;
+    gap: 1em; } }
